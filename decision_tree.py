@@ -1,14 +1,14 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Charles Kypros
+# FILENAME: contact_lens.csv
+# SPECIFICATION: Create decision tree from contact lens data
 # FOR: CS 4200- Assignment #1
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 20 minutes
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard vectors and arrays
-#importing some Python libraries
 
+#importing some Python libraries
 from sklearn import tree
 import matplotlib.pyplot as plt
 import csv
@@ -25,7 +25,6 @@ with open('contact_lens.csv', 'r') as csvfile:
          print(row)
 
 #transfor the original training features to numbers and add to the 4D array X. For instance Young = 1, Prepresbyopic = 2, Presbyopic = 3, so X = [[1, 1, 1, 1], [2, 2, 2, 2], ...]]
-#--> add your Python code here
 
 # AGE: Young = 1, Prepresbyopic = 2, Presbyopic = 3
 # PRESCRIPTION: Myope = 1, Hypermetrope = 2
@@ -42,8 +41,6 @@ for row in db:
   X.append(xDataRow)
 
 #transfor the original training classes to numbers and add to the vector Y. For instance Yes = 1, No = 2, so Y = [1, 1, 2, 2, ...]
-#--> add your Python code here
-
 for row in db:
     Y.append(1 if row[-1] == 'Yes' else 2)
 
