@@ -6,8 +6,6 @@
 # TIME SPENT: 20 minutes
 #-----------------------------------------------------------*/
 
-#IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard vectors and arrays
-
 #importing some Python libraries
 from sklearn import tree
 import matplotlib.pyplot as plt
